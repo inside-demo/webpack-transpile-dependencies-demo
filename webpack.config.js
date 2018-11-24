@@ -1,16 +1,11 @@
-const BabelEnginePlugin = require('babel-engine-plugin');
-
 module.exports = {
     mode: 'development',
     target: 'web',
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     entry: './index.js',
     output: {
         filename: 'bundle.js'
     },
-    plugins: [
-        new BabelEnginePlugin()
-    ],
     resolve: {
         modules: [ 'my_modules', 'node_modules' ]
     },
