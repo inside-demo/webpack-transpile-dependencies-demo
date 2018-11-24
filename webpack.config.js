@@ -2,7 +2,7 @@ module.exports = {
     mode: 'development',
     target: 'web',
     devtool: 'source-map',
-    entry: './index.js',
+    entry: ['@babel/polyfill','./index.js'],
     output: {
         filename: 'bundle.js'
     },
